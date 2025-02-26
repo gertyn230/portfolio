@@ -11,31 +11,34 @@
                 "about": "Обо мне",
                 "projects": "Проекты",
                 "contact": "Контакты",
-                "intro": "Я программист, специализируюсь на Python, C++ и Web-разработке.",
+                "intro": "Меня зовут Алексей. Учусь на специальности Инженерия программного обеспечения. Живу в Украине, мне 18 лет. Я программист, специализируюсь на Python, C++ и Web-разработке.",
                 "project1": "Бот для телеграма, который даёт мут, бан, кик, дорабатываю его)",
                 "project2": "Описание проекта...",
                 "email": "Email:",
-                "telegram": "Telegram:"
+                "telegram": "Telegram:",
+                "social": "Мои соц. сети:"
             },
             "en": {
                 "about": "About Me",
                 "projects": "Projects",
                 "contact": "Contacts",
-                "intro": "I am a programmer specializing in Python, C++, and Web development.",
+                "intro": "My name is Alexey. I am studying Software Engineering. I live in Ukraine, I am 18 years old. I am a programmer specializing in Python, C++, and Web development.",
                 "project1": "A Telegram bot that mutes, bans, and kicks users, still improving it)",
                 "project2": "Project description...",
                 "email": "Email:",
-                "telegram": "Telegram:"
+                "telegram": "Telegram:",
+                "social": "My social networks:"
             },
             "uk": {
                 "about": "Про мене",
                 "projects": "Проекти",
                 "contact": "Контакти",
-                "intro": "Я програміст, спеціалізуюсь на Python, C++ та веб-розробці.",
+                "intro": "Мене звати Олексій. Навчаюся за спеціальністю Інженерія програмного забезпечення. Живу в Україні, мені 18 років. Я програміст, спеціалізуюсь на Python, C++ та веб-розробці.",
                 "project1": "Бот для Telegram, який дає мут, бан, кік, ще доопрацьовую його)",
                 "project2": "Опис проекту...",
                 "email": "Email:",
-                "telegram": "Telegram:"
+                "telegram": "Telegram:",
+                "social": "Мої соцмережі:"
             }
         };
 
@@ -48,6 +51,7 @@
             document.getElementById("project2").textContent = translations[lang]["project2"];
             document.getElementById("email-label").textContent = translations[lang]["email"];
             document.getElementById("telegram-label").textContent = translations[lang]["telegram"];
+            document.getElementById("social-label").textContent = translations[lang]["social"];
         }
     </script>
     <style>
@@ -87,7 +91,7 @@
     
     <section id="about">
         <h2 id="about-title">Обо мне</h2>
-        <p id="intro">Я программист, специализируюсь на Python, C++ и Web-разработке.</p>
+        <p id="intro">Меня зовут Алексей. Учусь на специальности Инженерия программного обеспечения. Живу в Украине, мне 18 лет. Я программист, специализируюсь на Python, C++ и Web-разработке.</p>
     </section>
     
     <section id="projects">
@@ -104,8 +108,10 @@
     
     <section id="contact">
         <h2 id="contact-title">Контакты</h2>
-        <p><span id="email-label">Email:</span> gertn230@gmail.com</p>
-        <p><span id="telegram-label">Telegram:</span> gertyn230</p>
+        <p><span id="social-label">Мои соц. сети:</span></p>
+        <p><a href="https://instagram.com/_._privat_alesha_._">Instagram</a></p>
+        <p><a href="https://t.me/gertyn230">Telegram</a></p>
+        <p><a href="https://discord.com/users/gertyn230">Discord</a></p>
     </section>
 </body>
 </html>
