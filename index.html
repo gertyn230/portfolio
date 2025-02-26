@@ -11,7 +11,9 @@
                 "about": "Обо мне",
                 "projects": "Проекты",
                 "contact": "Контакты",
-                "intro": "Меня зовут Алексей. Учусь на специальности Инженерия программного обеспечения. Живу в Украине, мне 18 лет. Я программист, специализируюсь на Python, C++ и Web-разработке.",
+                "intro": "Привет! Меня зовут Алексей, мне 18 лет. Я учусь на специальности \"Инженерия программного обеспечения\" и живу в Украине. Увлекаюсь программированием и разрабатываю веб-приложения, ботов и другие проекты.",
+                "skills": "Мои навыки:",
+                "skill_list": "Программирование: Python, JavaScript, C++\nВеб-разработка: HTML, CSS, React\nБазы данных: MySQL, PostgreSQL\nРабота с серверами: Linux, OpenServer, FTP\nИнструменты: Git, Docker, Figma",
                 "project1": "Бот для телеграма, который даёт мут, бан, кик, дорабатываю его)",
                 "project2": "Описание проекта...",
                 "email": "Email:",
@@ -22,7 +24,9 @@
                 "about": "About Me",
                 "projects": "Projects",
                 "contact": "Contacts",
-                "intro": "My name is Alexey. I am studying Software Engineering. I live in Ukraine, I am 18 years old. I am a programmer specializing in Python, C++, and Web development.",
+                "intro": "Hello! My name is Alexey, I am 18 years old. I am studying Software Engineering and living in Ukraine. I am passionate about programming and developing web applications, bots, and other projects.",
+                "skills": "My Skills:",
+                "skill_list": "Programming: Python, JavaScript, C++\nWeb Development: HTML, CSS, React\nDatabases: MySQL, PostgreSQL\nServer Management: Linux, OpenServer, FTP\nTools: Git, Docker, Figma",
                 "project1": "A Telegram bot that mutes, bans, and kicks users, still improving it)",
                 "project2": "Project description...",
                 "email": "Email:",
@@ -33,7 +37,9 @@
                 "about": "Про мене",
                 "projects": "Проекти",
                 "contact": "Контакти",
-                "intro": "Мене звати Олексій. Навчаюся за спеціальністю Інженерія програмного забезпечення. Живу в Україні, мені 18 років. Я програміст, спеціалізуюсь на Python, C++ та веб-розробці.",
+                "intro": "Привіт! Мене звати Олексій, мені 18 років. Я навчаюся за спеціальністю \"Інженерія програмного забезпечення\" і живу в Україні. Захоплююся програмуванням і розробляю веб-додатки, ботів та інші проєкти.",
+                "skills": "Мої навички:",
+                "skill_list": "Програмування: Python, JavaScript, C++\nВеб-розробка: HTML, CSS, React\nБази даних: MySQL, PostgreSQL\nРобота з серверами: Linux, OpenServer, FTP\nІнструменти: Git, Docker, Figma",
                 "project1": "Бот для Telegram, який дає мут, бан, кік, ще доопрацьовую його)",
                 "project2": "Опис проекту...",
                 "email": "Email:",
@@ -47,6 +53,8 @@
             document.getElementById("projects-title").textContent = translations[lang]["projects"];
             document.getElementById("contact-title").textContent = translations[lang]["contact"];
             document.getElementById("intro").textContent = translations[lang]["intro"];
+            document.getElementById("skills-title").textContent = translations[lang]["skills"];
+            document.getElementById("skill-list").innerHTML = translations[lang]["skill_list"].replace(/\n/g, '<br>');
             document.getElementById("project1").textContent = translations[lang]["project1"];
             document.getElementById("project2").textContent = translations[lang]["project2"];
             document.getElementById("email-label").textContent = translations[lang]["email"];
@@ -54,23 +62,6 @@
             document.getElementById("social-label").textContent = translations[lang]["social"];
         }
     </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        a {
-            color: #ff6600;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .language-switch {
-            display: flex;
-            gap: 10px;
-            margin: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -91,32 +82,28 @@
     
     <section id="about">
         <h2 id="about-title">Обо мне</h2>
-                <p>Привет! Меня зовут Алексей, мне 18 лет. Я учусь на специальности "Инженерия программного обеспечения" и живу в Украине.</p>
-        <p>Увлекаюсь программированием и разрабатываю веб-приложения, ботов и другие проекты.</p>
-        <h3>Мои навыки:</h3>
-        <ul>
-            <li>Программирование: Python, JavaScript, C++</li>
-            <li>Веб-разработка: HTML, CSS, React</li>
-            <li>Базы данных: MySQL, PostgreSQL</li>
-            <li>Работа с серверами: Linux, OpenServer, FTP</li>
-            <li>Инструменты: Git, Docker, Figma</li>
+        <p id="intro"></p>
+        <h3 id="skills-title">Мои навыки:</h3>
+        <p id="skill-list"></p>
     </section>
     
     <section id="projects">
         <h2 id="projects-title">Проекты</h2>
         <div class="project">
             <h3>Проект 1</h3>
-            <p id="project1">Бот для телеграма, который даёт мут, бан, кик, дорабатываю его)</p>
+            <p id="project1"></p>
         </div>
         <div class="project">
             <h3>Проект 2</h3>
-            <p id="project2">Описание проекта...</p>
+            <p id="project2"></p>
         </div>
     </section>
     
     <section id="contact">
         <h2 id="contact-title">Контакты</h2>
-        <p><span id="social-label">Мои соц. сети:</span></p>
+        <p><span id="email-label"></span> gertn230@gmail.com</p>
+        <p><span id="telegram-label"></span> gertyn230</p>
+        <p><span id="social-label"></span></p>
         <p><a href="https://instagram.com/_._privat_alesha_._">Instagram</a></p>
         <p><a href="https://t.me/gertyn230">Telegram</a></p>
         <p><a href="https://discord.com/users/gertyn230">Discord</a></p>
