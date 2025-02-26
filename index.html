@@ -5,13 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио gertyn230</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        const translations = {
+            "ru": {
+                "about": "Обо мне",
+                "projects": "Проекты",
+                "contact": "Контакты",
+                "intro": "Я программист, специализируюсь на Python, C++ и Web-разработке.",
+                "project1": "Бот для телеграма, который даёт мут, бан, кик, дорабатываю его)",
+                "project2": "Описание проекта...",
+                "email": "Email:",
+                "telegram": "Telegram:"
+            },
+            "en": {
+                "about": "About Me",
+                "projects": "Projects",
+                "contact": "Contacts",
+                "intro": "I am a programmer specializing in Python, C++, and Web development.",
+                "project1": "A Telegram bot that mutes, bans, and kicks users, still improving it)",
+                "project2": "Project description...",
+                "email": "Email:",
+                "telegram": "Telegram:"
+            },
+            "uk": {
+                "about": "Про мене",
+                "projects": "Проекти",
+                "contact": "Контакти",
+                "intro": "Я програміст, спеціалізуюсь на Python, C++ та веб-розробці.",
+                "project1": "Бот для Telegram, який дає мут, бан, кік, ще доопрацьовую його)",
+                "project2": "Опис проекту...",
+                "email": "Email:",
+                "telegram": "Telegram:"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("about-title").textContent = translations[lang]["about"];
+            document.getElementById("projects-title").textContent = translations[lang]["projects"];
+            document.getElementById("contact-title").textContent = translations[lang]["contact"];
+            document.getElementById("intro").textContent = translations[lang]["intro"];
+            document.getElementById("project1").textContent = translations[lang]["project1"];
+            document.getElementById("project2").textContent = translations[lang]["project2"];
+            document.getElementById("email-label").textContent = translations[lang]["email"];
+            document.getElementById("telegram-label").textContent = translations[lang]["telegram"];
+        }
+    </script>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
         a {
-            color: inherit;
+            color: #ff6600;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .language-switch {
+            display: flex;
+            gap: 10px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -20,45 +73,39 @@
         <h1>Моё Портфолио</h1>
         <nav>
             <ul>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#about" id="about-title">Обо мне</a></li>
+                <li><a href="#projects" id="projects-title">Проекты</a></li>
+                <li><a href="#contact" id="contact-title">Контакты</a></li>
             </ul>
         </nav>
+        <div class="language-switch">
+            <button onclick="changeLanguage('ru')">Рус</button>
+            <button onclick="changeLanguage('en')">Eng</button>
+            <button onclick="changeLanguage('uk')">Укр</button>
+        </div>
     </header>
     
     <section id="about">
-        <h2>Обо мне</h2>
-        <p>Привет! Меня зовут Алексей, мне 18 лет. Я учусь на специальности "Инженерия программного обеспечения" и живу в Украине.</p>
-        <p>Увлекаюсь программированием и разрабатываю веб-приложения, ботов и другие проекты.</p>
-        <h3>Мои навыки:</h3>
-        <ul>
-            <li>Программирование: Python, JavaScript, C++</li>
-            <li>Веб-разработка: HTML, CSS, React</li>
-            <li>Базы данных: MySQL, PostgreSQL</li>
-            <li>Работа с серверами: Linux, OpenServer, FTP</li>
-            <li>Инструменты: Git, Docker, Figma</li>
-        </ul>
+        <h2 id="about-title">Обо мне</h2>
+        <p id="intro">Я программист, специализируюсь на Python, C++ и Web-разработке.</p>
     </section>
     
     <section id="projects">
-        <h2>Проекты</h2>
+        <h2 id="projects-title">Проекты</h2>
         <div class="project">
-            <h3>Telegram-бот</h3>
-            <p>Бот для Telegram, который может выдавать мут, бан, кик. В данный момент дорабатываю его.</p>
+            <h3>Проект 1</h3>
+            <p id="project1">Бот для телеграма, который даёт мут, бан, кик, дорабатываю его)</p>
         </div>
         <div class="project">
             <h3>Проект 2</h3>
-            <p>Описание проекта...</p>
+            <p id="project2">Описание проекта...</p>
         </div>
     </section>
     
     <section id="contact">
-        <h2>Контакты</h2>
-        <p>Email: gertn230@gmail.com</p>
-        <p>Telegram: <a href="https://t.me/gertyn230">gertyn230</a></p>
-        <p>Instagram: <a href="https://instagram.com/_._privat_alesha_._">_._privat_alesha_._</a></p>
-        <p>Discord: gertyn230</p>
+        <h2 id="contact-title">Контакты</h2>
+        <p><span id="email-label">Email:</span> gertn230@gmail.com</p>
+        <p><span id="telegram-label">Telegram:</span> gertyn230</p>
     </section>
 </body>
 </html>
