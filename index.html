@@ -6,15 +6,14 @@
     <title>Portfolio gertyn230</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-window.onload = function() {      
-const translations = {
+        const translations = {
             "ru": {
                 "about": "Обо мне",
                 "projects": "Проекты",
                 "contact": "Контакты",
                 "intro": "Привет! Меня зовут Алексей, мне 18 лет. Я учусь на специальности \"Инженерия программного обеспечения\" и живу в Украине. Увлекаюсь программированием и разрабатываю веб-приложения, ботов и другие проекты.",
                 "skills": "Мои навыки:",
-                "skill_list": "Программирование: Python, JavaScript, C++\nВеб-разработка: HTML, CSS, React\nБазы данных: MySQL, PostgreSQL\nРабота с серверами: Linux, OpenServer, FTP\nИнструменты: Git, Docker, Figma",
+                "skill_list": "Программирование: Python, JavaScript, C++<br>Веб-разработка: HTML, CSS, React<br>Базы данных: MySQL, PostgreSQL<br>Работа с серверами: Linux, OpenServer, FTP<br>Инструменты: Git, Docker, Figma",
                 "project1": "Бот для телеграма, который даёт мут, бан, кик, дорабатываю его)",
                 "project2": "Описание проекта...",
                 "email": "Email:",
@@ -27,7 +26,7 @@ const translations = {
                 "contact": "Contacts",
                 "intro": "Hello! My name is Alexey, I am 18 years old. I am studying Software Engineering and living in Ukraine. I am passionate about programming and developing web applications, bots, and other projects.",
                 "skills": "My Skills:",
-                "skill_list": "Programming: Python, JavaScript, C++\nWeb Development: HTML, CSS, React\nDatabases: MySQL, PostgreSQL\nServer Management: Linux, OpenServer, FTP\nTools: Git, Docker, Figma",
+                "skill_list": "Programming: Python, JavaScript, C++<br>Web Development: HTML, CSS, React<br>Databases: MySQL, PostgreSQL<br>Server Management: Linux, OpenServer, FTP<br>Tools: Git, Docker, Figma",
                 "project1": "A Telegram bot that mutes, bans, and kicks users, still improving it)",
                 "project2": "Project description...",
                 "email": "Email:",
@@ -40,7 +39,7 @@ const translations = {
                 "contact": "Контакти",
                 "intro": "Привіт! Мене звати Олексій, мені 18 років. Я навчаюся за спеціальністю \"Інженерія програмного забезпечення\" і живу в Україні. Захоплююся програмуванням і розробляю веб-додатки, ботів та інші проєкти.",
                 "skills": "Мої навички:",
-                "skill_list": "Програмування: Python, JavaScript, C++\nВеб-розробка: HTML, CSS, React\nБази даних: MySQL, PostgreSQL\nРобота з серверами: Linux, OpenServer, FTP\nІнструменти: Git, Docker, Figma",
+                "skill_list": "Програмування: Python, JavaScript, C++<br>Веб-розробка: HTML, CSS, React<br>Бази даних: MySQL, PostgreSQL<br>Робота з серверами: Linux, OpenServer, FTP<br>Інструменти: Git, Docker, Figma",
                 "project1": "Бот для Telegram, який дає мут, бан, кік, ще доопрацьовую його)",
                 "project2": "Опис проекту...",
                 "email": "Email:",
@@ -49,25 +48,24 @@ const translations = {
             }
         };
 
-      <script>
-    function changeLanguage(lang) {
-        document.getElementById("about-title").textContent = translations[lang]["about"];
-        document.getElementById("projects-title").textContent = translations[lang]["projects"];
-        document.getElementById("contact-title").textContent = translations[lang]["contact"];
-        document.getElementById("intro").textContent = translations[lang]["intro"];
-        document.getElementById("skills-title").textContent = translations[lang]["skills"];
-        document.getElementById("skill-list").innerHTML = translations[lang]["skill_list"].replace(/\n/g, '<br>');
-        document.getElementById("project1").textContent = translations[lang]["project1"];
-        document.getElementById("project2").textContent = translations[lang]["project2"];
-        document.getElementById("email-label").textContent = translations[lang]["email"];
-        document.getElementById("telegram-label").textContent = translations[lang]["telegram"];
-        document.getElementById("social-label").textContent = translations[lang]["social"];
-    }
+        function changeLanguage(lang) {
+            document.getElementById("about-title").textContent = translations[lang]["about"];
+            document.getElementById("projects-title").textContent = translations[lang]["projects"];
+            document.getElementById("contact-title").textContent = translations[lang]["contact"];
+            document.getElementById("intro").textContent = translations[lang]["intro"];
+            document.getElementById("skills-title").textContent = translations[lang]["skills"];
+            document.getElementById("skill-list").innerHTML = translations[lang]["skill_list"];
+            document.getElementById("project1").textContent = translations[lang]["project1"];
+            document.getElementById("project2").textContent = translations[lang]["project2"];
+            document.getElementById("email-label").textContent = translations[lang]["email"];
+            document.getElementById("telegram-label").textContent = translations[lang]["telegram"];
+            document.getElementById("social-label").textContent = translations[lang]["social"];
+        }
 
-    // Устанавливаем русский язык при загрузке страницы
-    window.onload = function() {
-        changeLanguage('ru');
-    };
+        // Устанавливаем русский язык при загрузке страницы
+        window.onload = function() {
+            changeLanguage('en');
+        };
     </script>
 </head>
 <body>
@@ -95,7 +93,7 @@ const translations = {
     </section>
     
     <section id="projects">
-        <h2 id="projects-title">Projekt</h2>
+        <h2 id="projects-title">Projects</h2>
         <div class="project">
             <h3>Проект 1</h3>
             <p id="project1"></p>
