@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gertyn230 | Портфоліо Розробника</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header blur-effect">
+        <nav class="nav">
+            <div class="logo" data-i18n="logo">Gertn230</div>
+        </nav>
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="uk" data-short="🇺🇦">
+                <span>🇺🇦 Укр</span>
+            </button>
+            <button class="lang-btn" data-lang="en" data-short="🇬🇧">
+                <span>🇬🇧 Eng</span>
+            </button>
+            <button class="lang-btn" data-lang="ru" data-short="🇷🇺">
+                <span>🇷🇺 Рус</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="heroTitle">Створюю майбутнє<br>з кодом та креативом</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Fullstack розробник з фокусом на сучасні технології та інновації</p>
+            <a href="#projects" class="cta-button">
+                <i class="fas fa-rocket"></i>
+                <span data-i18n="viewProjects">Переглянути проєкти</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <img src="images/profile.jpg" alt="Олексій" class="profile-img float">
+        <div>
+            <h2 data-i18n="aboutTitle">Про мене</h2>
+            <p data-i18n="aboutText">Молодший спеціаліст з повним циклом розробки - від ідеї до реалізації. Прагну створювати продукти, які вирішують реальні проблеми.</p>
+            <div class="skills-grid">
+                <div class="skill-card blur-effect">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3 data-i18n="skill1Title">Python</h3>
+                    <p data-i18n="skill1Desc">AI • Боти • Автоматизація</p>
+                </div>
+                <div class="skill-card blur-effect">
+                    <i class="fab fa-react skill-icon"></i>
+                    <h3 data-i18n="skill2Title">React</h3>
+                    <p data-i18n="skill2Desc">SPA • Динамічні інтерфейси</p>
+                </div>
+                <div class="skill-card blur-effect">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3 data-i18n="skill3Title">Бази даних</h3>
+                    <p data-i18n="skill3Desc">SQL • Оптимізація • Безпека</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 data-i18n="projectsTitle">Останні проєкти</h2>
+        <div class="projects-grid">
+            <div class="project-card blur-effect">
+                <img src="images/project1.jpg" class="project-image" alt="Telegram Bot">
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Telegram API</span>
+                    </div>
+                    <h3 data-i18n="project1Title">AI Модератор чатів</h3>
+                    <p data-i18n="project1Desc">Розумна система модерації з машинним навчанням</p>
+                </div>
+            </div>
+            <div class="project-card blur-effect">
+                <img src="images/project2.jpg" class="project-image" alt="Task Manager">
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <h3 data-i18n="project2Title">Корпоративний Task Manager</h3>
+                    <p data-i18n="project2Desc">Система управління проектами для команд</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 data-i18n="contactTitle">Зв'язок</h2>
+        <div class="contact-grid">
+            <div class="social-links">
+                <a href="mailto:gertn230@gmail.com" class="social-link blur-effect">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <span data-i18n="email">gertn230@gmail.com</span>
+                </a>
+                <a href="https://t.me/gertyn230" class="social-link blur-effect">
+                    <i class="fab fa-telegram fa-2x"></i>
+                    <span data-i18n="telegram">@gertyn230</span>
+                </a>
+                <a href="#" class="social-link blur-effect">
+                    <i class="fab fa-github fa-2x"></i>
+                    <span data-i18n="github">GitHub Профіль</span>
+                </a>
+            </div>
+            <form class="contact-form blur-effect">
+                <input type="text" class="form-input" placeholder="Ім'я" data-i18n-placeholder="namePlaceholder">
+                <input type="email" class="form-input" placeholder="Email" data-i18n-placeholder="emailPlaceholder">
+                <textarea class="form-input" rows="5" placeholder="Ваше повідомлення" data-i18n-placeholder="messagePlaceholder"></textarea>
+                <button type="submit" class="cta-button">
+                    <i class="fas fa-paper-plane"></i>
+                    <span data-i18n="sendButton">Надіслати</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p data-i18n="copyright">© 2024 Олексій. Всі права захищені</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
