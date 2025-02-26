@@ -62,11 +62,39 @@
             document.getElementById("social-label").textContent = translations[lang]["social"];
         }
 
-        // Устанавливаем русский язык при загрузке страницы
         window.onload = function() {
             changeLanguage('en');
         };
     </script>
+    <style>
+        .language-switch {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+        .language-switch button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+        .language-switch button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .language-switch button:active {
+            background-color: #004099;
+            transform: translateY(1px);
+            box-shadow: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -79,9 +107,9 @@
             </ul>
         </nav>
         <div class="language-switch">
-            <button onclick="changeLanguage('ru')">Рус</button>
-            <button onclick="changeLanguage('en')">Eng</button>
-            <button onclick="changeLanguage('uk')">Укр</button>
+            <button onclick="changeLanguage('ru')">🇷🇺 Рус</button>
+            <button onclick="changeLanguage('en')">🇬🇧 Eng</button>
+            <button onclick="changeLanguage('uk')">🇺🇦 Укр</button>
         </div>
     </header>
     
