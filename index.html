@@ -6,9 +6,7 @@
     <title>Portfolio gertyn230</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-window.onload = function() {
-    changeLanguage('ru'); // Устанавливаем русский язык при загрузке страницы
-};        
+window.onload = function() {      
 const translations = {
             "ru": {
                 "about": "Обо мне",
@@ -51,19 +49,25 @@ const translations = {
             }
         };
 
-        function changeLanguage(lang) {
-            document.getElementById("about-title").textContent = translations[lang]["about"];
-            document.getElementById("projects-title").textContent = translations[lang]["projects"];
-            document.getElementById("contact-title").textContent = translations[lang]["contact"];
-            document.getElementById("intro").textContent = translations[lang]["intro"];
-            document.getElementById("skills-title").textContent = translations[lang]["skills"];
-            document.getElementById("skill-list").innerHTML = translations[lang]["skill_list"].replace(/\n/g, '<br>');
-            document.getElementById("project1").textContent = translations[lang]["project1"];
-            document.getElementById("project2").textContent = translations[lang]["project2"];
-            document.getElementById("email-label").textContent = translations[lang]["email"];
-            document.getElementById("telegram-label").textContent = translations[lang]["telegram"];
-            document.getElementById("social-label").textContent = translations[lang]["social"];
-        }
+      <script>
+    function changeLanguage(lang) {
+        document.getElementById("about-title").textContent = translations[lang]["about"];
+        document.getElementById("projects-title").textContent = translations[lang]["projects"];
+        document.getElementById("contact-title").textContent = translations[lang]["contact"];
+        document.getElementById("intro").textContent = translations[lang]["intro"];
+        document.getElementById("skills-title").textContent = translations[lang]["skills"];
+        document.getElementById("skill-list").innerHTML = translations[lang]["skill_list"].replace(/\n/g, '<br>');
+        document.getElementById("project1").textContent = translations[lang]["project1"];
+        document.getElementById("project2").textContent = translations[lang]["project2"];
+        document.getElementById("email-label").textContent = translations[lang]["email"];
+        document.getElementById("telegram-label").textContent = translations[lang]["telegram"];
+        document.getElementById("social-label").textContent = translations[lang]["social"];
+    }
+
+    // Устанавливаем русский язык при загрузке страницы
+    window.onload = function() {
+        changeLanguage('ru');
+    };
     </script>
 </head>
 <body>
